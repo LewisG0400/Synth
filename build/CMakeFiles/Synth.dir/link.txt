@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Synth.dir/src/core/audio/AudioPlayer.cpp.o CMakeFiles/Synth.dir/src/core/audio/sound-generators/oscillators/SineOscillator.cpp.o CMakeFiles/Synth.dir/src/core/audio/sound-modifiers/SoundModifier.cpp.o CMakeFiles/Synth.dir/src/core/audio/sound-modifiers/filters/Filter.cpp.o CMakeFiles/Synth.dir/src/main.cpp.o -o Synth  -lSDL2 
