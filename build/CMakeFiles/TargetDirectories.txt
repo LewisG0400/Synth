@@ -1,7 +1,0 @@
-/home/lewis/Documents/programming/synth/build/CMakeFiles/install/strip.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/install/local.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/edit_cache.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/install.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/list_install_components.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/rebuild_cache.dir
-/home/lewis/Documents/programming/synth/build/CMakeFiles/Synth.dir
