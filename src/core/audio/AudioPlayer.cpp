@@ -1,8 +1,10 @@
 #include "AudioPlayer.h"
 
-void updateData(void *unused, Uint8 *byteStream, int byteStreamLength);
+//void updateData(void *unused, Uint8 *byteStream, int byteStreamLength);
 
 AudioPlayer::AudioPlayer(AudioProperties desired_properties) {
+    auto update_data_lambda = std::function<void(void *, Uint8*, int)>([=] (void *sound_generators, Uint8 *byteStream, int byteStreamLength) {this->updateData(sound_generators, byteStream, byteStreamLength);});
+
     // Set the properties we want our output to have
     SDL_AudioSpec props;
     SDL_zero(props);
@@ -10,7 +12,7 @@ AudioPlayer::AudioPlayer(AudioProperties desired_properties) {
     props.format = AUDIO_S16;
     props.channels = desired_properties.n_channels;
     props.samples = desired_properties.samples;
-    props.callback = [] (void *sound_generators, Uint8 *byteStream, int byteStreamLength) {this->updateData(sound_generators, byteStream, byteStreamLength);};
+    props.callback = update_data_lambda.target<void(void*, Uint8*, int)>();
     props.userdata = (void*) &this->sound_generators;
 
     // Open an audio device and get the properties of our audio

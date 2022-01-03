@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_audio.h>
 #include <math.h>
+#include <functional>
 
 #include <iostream>
 
